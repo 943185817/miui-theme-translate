@@ -89,22 +89,6 @@
 <bool name="battery_meter_use_legacy_drawable">true</bool>旧胶囊电池
 <color name="notification_expanded_bg_color_without_base">#00000000</color>
 <color name="optimized_heads_up_notification_text">#FFFFFFFF</color>
-<color name="qs_brightness_background_color">#00FFFFFF</color>
-<color name="qs_brightness_progress_color">#00FFFFFF</color>
-<color name="qs_detail_button">#FFFFFFFF</color>
-<color name="qs_detail_title_text_color">#FFFFFFFF</color>
-<color name="qs_detail_header_text">#FFFFFFFF</color>
-<color name="qs_detail_separated_text">#FFFFFFFF</color>
-<color name="qs_detail_buttons_text_color">#FFFFFFFF</color>
-<color name="qs_detail_empty_text_color">#FFFFFFFF</color>
-<color name="qs_detail_item_primary_text_color">#FFFFFFFF</color>
-<color name="qs_detail_item_secondary_text_color">#FFFFFFFF</color>
-<color name="qs_detail_connect_header_color">#FFFFFFFF</color>
-<color name="qs_detail_disconnect_header_color">#FFFFFFFF</color>
-<color name="qs_detail_content_background_color">#00000000</color>1
-<color name="qs_detail_connect_item_primary_text_color">#FFFFFFFF</color>
-<color name="qs_detail_connect_item_secondary_text_color">#FFFFFFFF</color>
-<color name="qs_page_indicator_dot_color">0</color>
 <color name="face_unlock_input_camera_view_bg_color">#FFFFFFFF</color>
 <color name="notification_media_action_color">#FF000000</color>
 <color name="notification_expanded_bg_divider_color">#00000000</color>
@@ -117,14 +101,32 @@
 <color name="face_unlock_input_title_color">#FFFFFFFF</color>
 <color name="notification_panel_bg_color">#FFFFFFFF</color>
 <color name="notification_panel_solid_background">#FFFFFFFF</color>
-<color name="qs_tile_label_text_color_secondary">#FFFFFFFF</color>
 <color name="notification_panel_background_keyguard">#5FFFFFFF</color>4
 <color name="face_unlock_suggestion_first_color">#FFFFFFFF</color>
 <color name="recent_tick_anim_color">#FFFFFFFF</color>
-<!--通知栏横条-->
-<dimen name="qs_panel_expand_indicator_height">-30dp</dimen>
-<dimen name="qs_panel_expand_indicator_width">-30dp</dimen>
-<!--快速设置-->
+<color name="qs_brightness_background_color">#00FFFFFF</color>
+<color name="qs_brightness_progress_color">#00FFFFFF</color>
+<color name="qs_detail_button">#FFFFFFFF</color>
+<color name="qs_detail_title_text_color">#FFFFFFFF</color>
+<color name="qs_detail_header_text">#FFFFFFFF</color>
+<color name="qs_detail_separated_text">#FFFFFFFF</color>
+<color name="qs_detail_buttons_text_color">#FFFFFFFF</color>
+<color name="qs_detail_empty_text_color">#FFFFFFFF</color>
+<color name="qs_detail_item_primary_text_color">#FFFFFFFF</color>
+<color name="qs_detail_item_secondary_text_color">#FFFFFFFF</color>
+<color name="qs_detail_connect_header_color">#FFFFFFFF</color>
+<color name="qs_detail_disconnect_header_color">#FFFFFFFF</color>
+<color name="qs_detail_content_background_color">#00000000</color>
+<color name="qs_detail_connect_item_primary_text_color">#FFFFFFFF</color>
+<color name="qs_detail_connect_item_secondary_text_color">#FFFFFFFF</color>
+<color name="qs_page_indicator_dot_color">0</color>
+<color name="qs_tile_label_text_color_secondary">#FFFFFFFF</color>
+<!--通知栏下拉小横条-->
+<dimen name="qs_panel_expand_indicator_height">0dp</dimen>高
+<dimen name="qs_panel_expand_indicator_width">0dp</dimen>宽
+<color name="qs_panel_expand_indicator_color">#00ffffff</color>颜色
+<dimen name="qs_panel_expand_indicator_stroke_width">0dp</dimen>
+<!--快速设置(通知栏未二次下拉时)-->
 <color name="notification_heads_up_bg_color">#5FFFFFFF</color> 悬浮通知背景颜色
 <color name="notification_panel_background">#5FFFFFFF</color> 通知栏通知颜色
 <color name="notification_guts_bg_color">#00000000</color> 通知左滑背景颜色
@@ -140,7 +142,13 @@
 <color name="qs_tile_icon_bg_enabled_color">#5FFFFFFF</color>5
 <color name="qs_tile_app_label_text_color">#FFFFFFFF</color>
 <color name="qs_tile_label_text_color">#FFFFFFFF</color>
-<dimen name="qs_panel_expand_indicator_width">0dp</dimen>
+<dimen name="qs_tile_content_height">220dp</dimen>快捷开关下拉后总体高度
+<dimen name="qs_tile_content_margin_horizontal">7dp</dimen>快捷开关下拉后间距
+<dimen name="qs_tile_content_margin_top">0dp</dimen>
+<dimen name="qs_tile_content_margin_bottom">0dp</dimen>
+
+<dimen name="notch_h">0dp</dimen>
+<dimen name="notch_top">0dp</dimen>
 <dimen name="notch_expanded_header_height">150.0dp</dimen> 通知栏时钟上距
 <dimen name="notch_expanded_clock_size">70.5dp</dimen> 通知栏时钟大小
 <bool name="expanded_status_bar_darkmode">false</bool>禁用深色状态栏
@@ -148,9 +156,8 @@
 <dimen name="expanded_notification_header_start">100.5dp</dimen>#时间整体距左
 <dimen name="expanded_notification_weather_temperature_right">0dp</dimen>#日期距左
 <dimen name="notification_min_height_legacy">15dp</dimen>通知高度
-<dimen name="qs_quick_panel_content_padding_top">-150dp</dimen> 快捷键上距
-<dimen name="notch_h">0dp</dimen>
-<dimen name="notch_top">0dp</dimen>
+<dimen name="qs_quick_panel_content_padding_top">-150dp</dimen> 快捷开关上距
+<dimen name="qs_quick_panel_content_padding_horizontal">10dp</dimen>快捷开关水平padding
 <dimen name="round_cornor_padding">15.0dp</dimen>状态栏两边图标距离
 <dimen name="status_bar_clock_size">15.0dp</dimen> 状态栏时钟文字大小
 <dimen name="statusbar_battery_size">15.0dp</dimen>状态栏电池大小
@@ -196,7 +203,7 @@
 <dimen name="notification_custom_view_margin_end">0dp</dimen>
 <dimen name="notification_expanded_bg_divider_height">0dp</dimen> 
 <dimen name="notification_row_extra_padding">15.0dp</dimen>
-<dimen name="recents_task_view_rounded_corners_radius">15.0dp</dimen> 最近任务
+<dimen name="recents_task_view_rounded_corners_radius">15.0dp</dimen> 最近任务圆角
 <dimen name="panel_content_corner_radius">15.0dp</dimen>亮度对话框圆角
 <dimen name="notification_heads_up_bg_radius">15.0dp</dimen> 悬浮通知圆角
 <dimen name="notification_stack_scroller_bg_radius">15.0dp</dimen>通知圆角
@@ -207,27 +214,27 @@
 <dimen name="miui_volume_silence_button_height">35.0dp</dimen>静音按钮高度?
 <dimen name="miui_volume_column_width_expanded">35.0dp</dimen>
 <dimen name="miui_volume_bg_radius">10.0dp</dimen>音量条圆角
-	<dimen name="miui_volume_bg_radius_expanded">8dp</dimen>展开音量界面圆角
+<dimen name="miui_volume_bg_radius_expanded">8dp</dimen>展开音量界面圆角
 <dimen name="miui_volume_footer_margin_top">10.0dp</dimen>
 <dimen name="miui_volume_column_height">195.0dp</dimen>侧音量条高度
 <!--日期-->
 <string name="fmt_time_12hour_minute_pm"package="miui">HH:mm</string> 状态栏时间12样式
 <string name="fmt_time_24hour_minute"package="miui">HH:mm</string> 状态栏时间24样式
-<string name="status_bar_clock_date_format">MM月dd日 N月e E</string>
+<string name="status_bar_clock_date_format">MM月dd日 N月e E</string>下拉通知栏时间下面的时间格式
 <string name="status_bar_clock_date_format_12">MM月dd日 N月e E</string>
 <string name="status_bar_clock_date_time_format">MM月dd日 N月e E</string>
 <string name="status_bar_clock_date_time_format_12">MM月dd日 N月e E</string>
-<!--流量-->
+<!--状态栏流量-->
 <color name="qs_footer_data_usage_text_color">#FFFFFFFF</color>
 <dimen name="qs_divider_margin_horizontal">0dp</dimen>
 <dimen name="qs_divider_size">0dp</dimen>
 <dimen name="qs_footer_height">0dp</dimen>
 <dimen name="qs_footer_data_usage_icon_size">0dp</dimen>
 <dimen name="qs_footer_line_margin_start">0dp</dimen>
-<color name="ripple_material_light">#00000000</color>
-<color name="media_notification_actions_bg_color">#00000000</color>
 <color name="qs_divider_color">#00000000</color>
 <color name="qs_footer_data_usage_divider_color">#00000000</color>
+<color name="ripple_material_light">#00000000</color>
+<color name="media_notification_actions_bg_color">#00000000</color>
 <!--不重要通知线条颜色-->
 <color name="fold_dividing_line_color">#00000000</color>
 <!--电池-->
