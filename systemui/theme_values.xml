@@ -71,7 +71,7 @@
 <!--	未知-->
 <string name="quick_settings_description_label">搜索查找</string>
 <!--此处暂无-->
-<!--通知栏下拉颜色值-->
+<!--通知栏/通知下拉颜色值-->
 <color name="notification_icon_bg_color">#00000000</color>
 <color name="statusbar_content_title">#FF000000</color>不重要通知标题颜色值
 <color name="statusbar_content">#FF000000</color>不重要通知内容颜色值
@@ -87,21 +87,24 @@
 <color name="notification_snooze_expand_button_text_color">#FFFFFFFF</color>
 <color name="notification_snooze_divider_color">#FFFFFFFF</color>
 <bool name="battery_meter_use_legacy_drawable">true</bool>旧电池true 新版电池false 新版电池是单个图片进行分割
-<color name="notification_expanded_bg_color_without_base">#00000000</color>
 <color name="optimized_heads_up_notification_text">#FFFFFFFF</color>
 <color name="face_unlock_input_camera_view_bg_color">#FFFFFFFF</color>
 <color name="notification_media_action_color">#FF000000</color>
-<color name="notification_expanded_bg_divider_color">#00000000</color>
-<color name="notification_expanded_bg_color">#00000000</color>2
 <color name="recent_menu_bg_pressed_color">#fff2f2f0</color>
 <color name="color_button_background">#FFFFFFFF</color>
-<color name="face_unlock_input_cameraview_color">#FFFFFFFF</color>
-<color name="screenshot_part_divider_color">#00000000</color>3
-<color name="notification_setting_button_color">#FFFFFFFF</color>
 <color name="face_unlock_input_title_color">#FFFFFFFF</color>
+<color name="face_unlock_input_cameraview_color">#FFFFFFFF</color>
+<color name="screenshot_part_divider_color">#00000000</color>
+<color name="notification_setting_button_color">#FFFFFFFF</color>
 <color name="notification_panel_bg_color">#FFFFFFFF</color>
 <color name="notification_panel_solid_background">#FFFFFFFF</color>
-<color name="notification_panel_background_keyguard">#5FFFFFFF</color>4
+<color name="notification_panel_background">#5FFFFFFF</color> 通知栏通知颜色
+<color name="notification_panel_background_keyguard">#5FFFFFFF</color>
+<color name="notification_heads_up_bg_color">#5FFFFFFF</color> 悬浮通知背景颜色
+<color name="notification_guts_bg_color">#00000000</color> 通知左滑背景颜色
+<color name="notification_expanded_bg_divider_color">#00000000</color>
+<color name="notification_expanded_bg_color">#00000000</color>
+<color name="notification_expanded_bg_color_without_base">#00000000</color>
 <color name="face_unlock_suggestion_first_color">#FFFFFFFF</color>
 <color name="recent_tick_anim_color">#FFFFFFFF</color>
 <color name="qs_brightness_background_color">#00FFFFFF</color>
@@ -127,9 +130,6 @@
 <color name="qs_panel_expand_indicator_color">#00ffffff</color>颜色
 <dimen name="qs_panel_expand_indicator_stroke_width">0dp</dimen>
 <!--快速设置(通知栏未二次下拉时)-->
-<color name="notification_heads_up_bg_color">#5FFFFFFF</color> 悬浮通知背景颜色
-<color name="notification_panel_background">#5FFFFFFF</color> 通知栏通知颜色
-<color name="notification_guts_bg_color">#00000000</color> 通知左滑背景颜色
 <color name="qs_panel_background_color">#00000000</color> 背板颜色
 <color name="qs_customize_content_background_color">#00000000</color>编辑区候选背景颜色
 <!--状态栏-->
@@ -139,7 +139,7 @@
 <color name="qs_tile_icon_enabled_color">#FFFFFFFF</color>图标启用颜色
 <color name="qs_tile_icon_disabled_color">#FFFFFFFF</color>
 <color name="qs_tile_icon_border_color">#00000000</color>
-<color name="qs_tile_icon_bg_enabled_color">#5FFFFFFF</color>5
+<color name="qs_tile_icon_bg_enabled_color">#5FFFFFFF</color>
 <color name="qs_tile_app_label_text_color">#FFFFFFFF</color>
 <color name="qs_tile_label_text_color">#FFFFFFFF</color>
 <dimen name="qs_tile_content_height">220dp</dimen>快捷开关下拉后总体高度
@@ -186,7 +186,7 @@
 <integer name="quick_settings_num_columns">5</integer>快捷功能横排个数
 <integer name="quick_settings_num_rows">3</integer>快捷功能竖排个数
 <dimen name="expanded_notification_header_bottom">5dp</dimen>状态栏下拉文字底部高度
-<dimen name="notification_min_height_increased">135dp</dimen>通知强制展开
+<dimen name="notification_min_height_increased">135dp</dimen>通知强制展开(通知最小高度)
 <dimen name="notification_divider_height">5dp</dimen>通知分隔符高度
 <color name="notification_panel_trandparent_cover">#00000000</color>通知面板透明盖
 <color name="notification_panel_background_without_base">#00000000</color>没有背景的通知面板背景
